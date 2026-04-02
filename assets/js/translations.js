@@ -58,7 +58,7 @@ const translations = {
     "testi-title": "Research Vision & <strong>Impact</strong>",
     "testi-quote": "\"My mission is to bridge the gap between advanced econometrics and artificial intelligence to create sustainable, data-driven health policies. By understanding the causal drivers of child health, we can build a more equitable future for all.\"",
     "testi-name": "Dr. Muhammad Shahid",
-    "testi-role": "PhD in Economics / Associate Researcher",
+    "testi-role": "Machine learning analyst in health economics and public health",
     "pub-subtitle": "Publications/Articles",
     "pub-title": "Research <strong>Publications & Insights</strong>",
     "pub-btn": "View Publication",
