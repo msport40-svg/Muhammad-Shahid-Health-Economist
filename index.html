@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M. Shahid Health Economist</title>
+  <title>Wildvine - Give Love for Saving World Animals</title>
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/favicon.jpeg" type="image/jpeg">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -40,11 +40,10 @@
         <a href="#" class="logo">M. Shahid</a>
       </h1>
 
-      <select name="language" class="lang-switch">
+      <select name="language" class="lang-switch" id="language-select">
 
-        <option value="english">English</option>
-        <option value="french">French</option>
-        <option value="spanish">Spanish</option>
+        <option value="en">English</option>
+        <option value="zh">Chinese</option>
 
       </select>
 
@@ -64,7 +63,7 @@
 
           <li>
             <a href="#home" class="navbar-link" data-nav-link>
-              <span>Home</span>
+              <span data-t="nav-home">Home</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
@@ -72,7 +71,7 @@
 
           <li>
             <a href="#about" class="navbar-link" data-nav-link>
-              <span>About</span>
+              <span data-t="nav-about">About</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
@@ -80,7 +79,7 @@
 
           <li>
             <a href="#service" class="navbar-link" data-nav-link>
-              <span>Service</span>
+              <span data-t="nav-service">Service</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
@@ -96,7 +95,7 @@
 
           <li>
             <a href="#event" class="navbar-link" data-nav-link>
-              <span>Publications</span>
+              <span data-t="nav-publications">Publications</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
@@ -104,7 +103,7 @@
 
           <li>
             <a href="#contact" class="navbar-link" data-nav-link>
-              <span>Contact</span>
+              <span data-t="nav-contact">Contact</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
@@ -119,7 +118,7 @@
 
 
         <a class="btn btn-primary" href="./assets/docs/cv.pdf" download>
-          <span>Download CV</span>
+          <span data-t="nav-download-cv">Download CV</span>
 
           <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
         </a>
@@ -148,7 +147,7 @@
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-white.png" width="32" height="7" alt="Wavy line">
 
-            <span>HEALTH ECONOMIST & DATA SCIENTIST</span>
+            <span data-t="hero-subtitle">HEALTH ECONOMIST & DATA SCIENTIST</span>
           </p>
 
           <div style="display: flex; align-items: center; gap: 25px; margin-block: 35px;">
@@ -156,19 +155,21 @@
               style="border-radius: 50%; object-fit: cover; border: 2px solid white; flex-shrink: 0;"
               alt="Muhammad Shahid">
             <div style="display: flex; flex-direction: column;">
-              <h2 class="h1 hero-title" style="font-size: var(--fs-3); margin-block: 0; line-height: 1.1;">Muhammad
+              <h2 class="h1 hero-title" style="font-size: var(--fs-3); margin-block: 0; line-height: 1.1;"
+                data-t="hero-title">Muhammad
                 Shahid</h2>
-              <p style="color: white; font-size: 1.9rem; margin-top: 10px; font-weight: 500;">Shenzhen University</p>
+              <p style="color: white; font-size: 1.9rem; margin-top: 10px; font-weight: 500;" data-t="hero-institution">
+                Shenzhen University</p>
             </div>
           </div>
 
-          <p class="hero-text">
+          <p class="hero-text" data-t="hero-text">
             Expert in Applied Health Economics, Machine Learning and Explainable AI.
             Solving complex health policy problems with data-driven insights.
           </p>
 
           <a href="#contact" class="btn btn-primary">
-            <span>Contact Me</span>
+            <span data-t="hero-contact-btn">Contact Me</span>
             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
           </a>
 
@@ -297,17 +298,18 @@
             <p class="section-subtitle">
               <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
-              <span>About Me</span>
+              <span data-t="about-subtitle">About Me</span>
             </p>
 
-            <h2 class="h2 section-title">
+            <h2 class="h2 section-title" data-t="about-title">
               Professional Background<strong>Summary</strong>
             </h2>
 
             <ul class="tab-nav">
 
               <li>
-                <button class="tab-btn active">Academic Background, My works and Current focus</button>
+                <button class="tab-btn active" data-t="about-tab-btn">Academic Background, My works and Current
+                  focus</button>
               </li>
 
               <!-- <li>
@@ -322,7 +324,7 @@
 
             <div class="tab-content">
 
-              <p class="section-text">
+              <p class="section-text" data-t="about-text">
                 Dr. M. Shahid is a highly accomplished Health Economist and Data Scientist with a PhD in Economics,
                 specializing in
                 Finance, Insurance, and Health Policy from the University of International Business and Economics,
@@ -410,10 +412,10 @@
         <div class="container">
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-            <span>Academic Journey</span>
+            <span data-t="edu-subtitle">Academic Journey</span>
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="edu-title">
             Educational <strong>Milestones</strong>
           </h2>
 
@@ -518,12 +520,13 @@
         <div class="container">
 
           <div class="cta-content">
-            <h2 style="font-size: x-large;" class="h2 section-title">1000+ Google Scholar Citations | h-index : 17 | 50
+            <h2 style="font-size: x-large;" class="h2 section-title" data-t="cta-title">1000+ Google Scholar Citations |
+              h-index : 17 | 50
               Publications</h2>
 
             <a href="https://scholar.google.com/citations?user=XjOPOaUAAAAJ&hl=en" target="_blank"
               class="btn btn-outline" style="text-decoration: none;">
-              <span>See Scholar</span>
+              <span data-t="cta-btn">See Scholar</span>
 
               <ion-icon name="school" aria-hidden="true"></ion-icon>
             </a>
@@ -545,10 +548,10 @@
         <div class="container">
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-            <span>Global Impact</span>
+            <span data-t="impact-subtitle">Global Impact</span>
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="impact-title">
             Institutional <strong>Collaborations</strong>
           </h2>
 
@@ -559,9 +562,10 @@
               <div class="collab-icon">
                 <ion-icon name="business-outline"></ion-icon>
               </div>
-              <h3 class="h3 collab-title">World Health Organization</h3>
-              <p class="collab-role">Data Management & Analyst</p>
-              <p class="collab-text">Providing data-driven insights and health policy consultancy across regional WHO
+              <h3 class="h3 collab-title" data-t="collab-1-title">World Health Organization</h3>
+              <p class="collab-role" data-t="collab-1-role">Data Management & Analyst</p>
+              <p class="collab-text" data-t="collab-1-text">Providing data-driven insights and health policy consultancy
+                across regional WHO
                 hubs.</p>
             </li>
 
@@ -569,9 +573,10 @@
               <div class="collab-icon">
                 <ion-icon name="school-outline"></ion-icon>
               </div>
-              <h3 class="h3 collab-title">Shenzhen University</h3>
-              <p class="collab-role">Associate Researcher</p>
-              <p class="collab-text">Current affiliation at the College of Management, focusing on high-level economic
+              <h3 class="h3 collab-title" data-t="collab-2-title">Shenzhen University</h3>
+              <p class="collab-role" data-t="collab-2-role">Associate Researcher</p>
+              <p class="collab-text" data-t="collab-2-text">Current affiliation at the College of Management, focusing
+                on high-level economic
                 research.</p>
             </li>
 
@@ -579,9 +584,10 @@
               <div class="collab-icon">
                 <ion-icon name="stats-chart-outline"></ion-icon>
               </div>
-              <h3 class="h3 collab-title">Tsinghua University</h3>
-              <p class="collab-role">Associate Researcher</p>
-              <p class="collab-text">Conducted research at the Vanke School of Public Health, one of China's top
+              <h3 class="h3 collab-title" data-t="collab-3-title">Tsinghua University</h3>
+              <p class="collab-role" data-t="collab-3-role">Associate Researcher</p>
+              <p class="collab-text" data-t="collab-3-text">Conducted research at the Vanke School of Public Health, one
+                of China's top
                 institutions.</p>
             </li>
 
@@ -589,9 +595,10 @@
               <div class="collab-icon">
                 <ion-icon name="search-outline"></ion-icon>
               </div>
-              <h3 class="h3 collab-title">Peking University</h3>
-              <p class="collab-role">Research Assistant</p>
-              <p class="collab-text">Collaborated with the Department of Health Policy & Management on large-scale
+              <h3 class="h3 collab-title" data-t="collab-4-title">Peking University</h3>
+              <p class="collab-role" data-t="collab-4-role">Research Assistant</p>
+              <p class="collab-text" data-t="collab-4-text">Collaborated with the Department of Health Policy &
+                Management on large-scale
                 health studies.</p>
             </li>
 
@@ -663,10 +670,10 @@
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
-            <span>What I Do</span>
+            <span data-t="service-subtitle">What I Do</span>
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="service-title">
             Advanced Analytics and <strong>Specialized Skills</strong>
           </h2>
 
@@ -679,19 +686,12 @@
                   <ion-icon name="leaf-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Health Ensurance Consulting</h3>
+                <h3 class="h3 card-title" data-t="service-1-title">Health Ensurance Consulting</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-1-text">
                   Expert advice on health financing, policy evaluation & health systems to ensure sustainable health
                   coverage.
                 </p>
-
-                <!-- <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -702,19 +702,12 @@
                   <ion-icon name="stats-chart-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Data Analytics</h3>
+                <h3 class="h3 card-title" data-t="service-2-title">Data Analytics</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-2-text">
                   Leveraging machine learning and economic model to derive actionable insights from complex health and
                   consumer data.
                 </p>
-
-                <!-- <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -725,19 +718,12 @@
                   <ion-icon name="bar-chart-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Predictive Modeling</h3>
+                <h3 class="h3 card-title" data-t="service-3-title">Predictive Modeling</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-3-text">
                   Developing Bayesian Neural Networks and Explainable AI (SHAP) models for precise risk and outcome
                   prediction.
                 </p>
-                <!-- 
-                <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -748,19 +734,12 @@
                   <ion-icon name="list-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Policy Evaluation</h3>
+                <h3 class="h3 card-title" data-t="service-4-title">Policy Evaluation</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-4-text">
                   Evaluating public health interventions, SDGs and child nutrition programs to drive sustainable policy
                   development.
                 </p>
-
-                <!-- <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -771,19 +750,12 @@
                   <ion-icon name="document-text-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Technical Writing</h3>
+                <h3 class="h3 card-title" data-t="service-5-title">Technical Writing</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-5-text">
                   High-quality academic & technical writing services tailoned for prestigious medical & health economics
                   journals.
                 </p>
-                <!-- 
-                <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -794,19 +766,12 @@
                   <ion-icon name="reader-outline"></ion-icon>
                 </div>
 
-                <h3 class="h3 card-title">Research & Editing</h3>
+                <h3 class="h3 card-title" data-t="service-6-title">Research & Editing</h3>
 
-                <p class="card-text">
+                <p class="card-text" data-t="service-6-text">
                   Comprehensive editing and peer-review preparation to elevate the impact and clarity of scientific
                   publications.
                 </p>
-                <!-- 
-                <a href="#" class="btn-link">
-                  <span>Read More</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </a> -->
-
               </div>
             </li>
 
@@ -825,12 +790,12 @@
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
-            <span>Key Contributions</span>
+            <span data-t="res-subtitle">Key Contributions</span>
 
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="res-title">
             Research <strong>Insights & Projects</strong>
           </h2>
 
@@ -839,16 +804,16 @@
             <li>
               <div class="donate-card research-card-new">
                 <div class="card-content-new">
-                  <span class="card-tag">Case Study</span>
-                  <h3 class="h3 card-title">Child Malnutrition Research (Punjab, Pakistan)</h3>
-                  <p class="card-text">
+                  <span class="card-tag" data-t="res-1-tag">Case Study</span>
+                  <h3 class="h3 card-title" data-t="res-1-title">Child Malnutrition Research (Punjab, Pakistan)</h3>
+                  <p class="card-text" data-t="res-1-text">
                     Extensive research on socio-economic correlates of malnutrition among pre-school children, focusing
                     on marginalized districts in Punjab.
                   </p>
                   <div class="card-footer-new">
-                    <span class="card-meta">2022 • Rural Health • Soc-Eco</span>
+                    <span class="card-meta" data-t="res-1-meta">2022 • Rural Health • Soc-Eco</span>
                     <a href="#event" class="btn btn-grey">
-                      <span>View Publications</span>
+                      <span data-t="res-btn">View Publications</span>
                       <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                     </a>
                   </div>
@@ -936,10 +901,10 @@
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
-            <span>Academic Vision</span>
+            <span data-t="testi-subtitle">Academic Vision</span>
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="testi-title">
             Research Vision & <strong>Impact</strong>
           </h2>
 
@@ -951,15 +916,15 @@
             </figure>
 
             <div>
-              <blockquote class="testi-text">
+              <blockquote class="testi-text" data-t="testi-quote">
                 "My mission is to bridge the gap between advanced econometrics and artificial intelligence to create
                 sustainable, data-driven health policies. By understanding the causal drivers of child health, we can
                 build a more equitable future for all."
               </blockquote>
 
-              <h3 class="testi-name">Dr. Muhammad Shahid</h3>
+              <h3 class="testi-name" data-t="testi-name">Dr. Muhammad Shahid</h3>
 
-              <p class="testi-title">Machine Learning Analyst in health economics and Public Health</p>
+              <p class="testi-title" data-t="testi-role">PhD in Economics / Associate Researcher</p>
             </div>
 
           </div>
@@ -1125,12 +1090,12 @@
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
 
-            <span>Publications/Articles</span>
+            <span data-t="pub-subtitle">Publications/Articles</span>
 
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="pub-title">
             Research <strong>Publications & Insights</strong>
           </h2>
 
@@ -1139,12 +1104,13 @@
               <div class='event-card'><time class='card-time'>2022</time>
                 <div class='card-content'>
                   <p class='card-subtitle'>D Liu, XL Feng, F Ahmed, M Shahid, J Guo</p>
-                  <h3 class='h3 card-title'>Detecting and measuring depression on social media using a machine learning
+                  <h3 class='h3 card-title' data-t="pub-1-title">Detecting and measuring depression on social media
+                    using a machine learning
                     approach: systematic review</h3>
                   <p class='card-text'></p><a
                     href='https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XjOPOaUAAAAJ&citation_for_view=XjOPOaUAAAAJ:tuHXwOkdijsC'
-                    class='btn btn-grey' target='_blank'><span>View Publication</span><ion-icon name='arrow-forward'
-                      aria-hidden='true'></ion-icon></a>
+                    class='btn btn-grey' target='_blank'><span data-t="pub-btn">View Publication</span><ion-icon
+                      name='arrow-forward' aria-hidden='true'></ion-icon></a>
                 </div>
               </div>
             </li>
@@ -1766,7 +1732,7 @@
           </ul>
 
           <button class="btn btn-secondary" id="see-more-btn">
-            <span>See More</span>
+            <span data-t="see-more-btn">See More</span>
 
             <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
           </button>
@@ -1785,19 +1751,21 @@
             <p class="section-subtitle" style="color: var(--black);">
               <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line"
                 style="filter: brightness(0);">
-              <span style="color: var(--black); font-weight: 700;">Educational Impact</span>
+              <span style="color: var(--black); font-weight: 700;" data-t="hub-subtitle">Educational Impact</span>
             </p>
-            <h2 class="h2 section-title" style="color: var(--black); font-size: 3.5rem; text-align: left;">
+            <h2 class="h2 section-title" style="color: var(--black); font-size: 3.5rem; text-align: left;"
+              data-t="hub-title">
               Software & <strong>Courses Hub</strong>
             </h2>
-            <p class="section-text" style="color: var(--black); font-size: 1.8rem; margin-block: 25px; opacity: 0.8;">
+            <p class="section-text" style="color: var(--black); font-size: 1.8rem; margin-block: 25px; opacity: 0.8;"
+              data-t="hub-text">
               Democratizing data science through technical tutorials on STATA, Econometrics, and Bayesian
               Neural Networks. Shared with a global community of researchers and students.
             </p>
             <a href="https://youtube.com/@softwareandcourseshub4035?si=q4hOzsSsA3c7yBCB" target="_blank"
               class="btn btn-primary"
               style="background: var(--black); color: white; border-color: var(--black); width: max-content;">
-              <span>Visit YouTube Channel</span>
+              <span data-t="hub-btn">Visit YouTube Channel</span>
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </div>
@@ -1823,10 +1791,10 @@
         <div class="container">
           <p class="section-subtitle">
             <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
-            <span>Recognition & Contribution</span>
+            <span data-t="awards-subtitle">Recognition & Contribution</span>
           </p>
 
-          <h2 class="h2 section-title">
+          <h2 class="h2 section-title" data-t="awards-title">
             Awards & <strong>Academic Service</strong>
           </h2>
 
@@ -1835,22 +1803,25 @@
 
             <div class="award-card">
               <div class="award-icon"><ion-icon name="shield-checkmark-outline"></ion-icon></div>
-              <h3 class="h3" style="margin-block: 15px;">Journal Peer Reviewer</h3>
-              <p class="award-text">Committed to academic rigor as a reviewer for prestigious journals including BMC
+              <h3 class="h3" style="margin-block: 15px;" data-t="award-1-title">Journal Peer Reviewer</h3>
+              <p class="award-text" data-t="award-1-text">Committed to academic rigor as a reviewer for prestigious
+                journals including BMC
                 Public Health, PLOS ONE, and the Frontiers research series.</p>
             </div>
 
             <div class="award-card">
               <div class="award-icon"><ion-icon name="medal-outline"></ion-icon></div>
-              <h3 class="h3" style="margin-block: 15px;">CSC Scholarship</h3>
-              <p class="award-text">Selected for the prestigious Chinese Government Scholarship for doctoral
+              <h3 class="h3" style="margin-block: 15px;" data-t="award-2-title">CSC Scholarship</h3>
+              <p class="award-text" data-t="award-2-text">Selected for the prestigious Chinese Government Scholarship
+                for doctoral
                 research at the University of International Business and Economics.</p>
             </div>
 
             <div class="award-card">
               <div class="award-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
-              <h3 class="h3" style="margin-block: 15px;">Research Excellence</h3>
-              <p class="award-text">Maintains a high-impact research output with 1000+ citations and a steady record
+              <h3 class="h3" style="margin-block: 15px;" data-t="award-3-title">Research Excellence</h3>
+              <p class="award-text" data-t="award-3-text">Maintains a high-impact research output with 1000+ citations
+                and a steady record
                 of Q1/Q2 SSCI/SCI publications.</p>
             </div>
 
@@ -1912,7 +1883,8 @@
             <!-- Contact -->
             <div>
               <h4
-                style="text-transform: uppercase; letter-spacing: 2px; font-size: 1.4rem; margin-block-end: 25px; color: var(--pistachio); font-weight: 700;">
+                style="text-transform: uppercase; letter-spacing: 2px; font-size: 1.4rem; margin-block-end: 25px; color: var(--pistachio); font-weight: 700;"
+                data-t="footer-connect">
                 Connect</h4>
               <ul style="display: flex; flex-direction: column; gap: 20px;">
                 <li style="display: flex; align-items: center; gap: 12px;">
@@ -1935,7 +1907,8 @@
             <!-- Social -->
             <div>
               <h4
-                style="text-transform: uppercase; letter-spacing: 2px; font-size: 1.4rem; margin-block-end: 25px; color: var(--pistachio); font-weight: 700;">
+                style="text-transform: uppercase; letter-spacing: 2px; font-size: 1.4rem; margin-block-end: 25px; color: var(--pistachio); font-weight: 700;"
+                data-t="footer-research">
                 Research Networks</h4>
               <div style="display: flex; gap: 15px; flex-wrap: wrap;">
                 <a href="https://scholar.google.com/citations?user=XjOPOaUAAAAJ&hl=en" target="_blank"
@@ -1965,7 +1938,7 @@
               style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 15px;">
               <button class="btn btn-secondary"
                 style="border: 2px solid var(--pistachio); background: transparent; color: white;">
-                <span>Meet the Developer</span>
+                <span data-t="footer-dev-btn">Meet the Developer</span>
                 <ion-icon name="code-slash-outline"></ion-icon>
               </button>
 
@@ -2104,8 +2077,8 @@
         <div class="header-info">
           <img src="./assets/images/me9.jpeg" alt="Dr. Shahid" class="assistant-avatar">
           <div>
-            <h4 class="h4">Shahid's AI Assistant</h4>
-            <p class="status">Online | Expert in Health Eco</p>
+            <h4 class="h4" data-t="asst-header">Shahid's AI Assistant</h4>
+            <p class="status" data-t="asst-status">Online | Expert in Health Eco</p>
           </div>
         </div>
         <button class="close-chat" id="close-chat">
@@ -2113,19 +2086,20 @@
         </button>
       </div>
       <div class="chat-body" id="chat-body">
-        <div class="message assistant">
+        <div class="message assistant" data-t="asst-greet-ui">
           Hello! I'm Dr. Shahid's AI Assistant. You can ask me anything, or select a quick question below:
         </div>
         <div class="quick-questions" id="quick-questions">
-          <button class="qn-chip">What is your PhD about?</button>
-          <button class="qn-chip">How can I contact you?</button>
-          <button class="qn-chip">Tell me about your WHO role</button>
-          <button class="qn-chip">Research interests?</button>
-          <button class="qn-chip">Citations & Impact</button>
+          <button class="qn-chip" data-t="asst-chip-1">What is your PhD about?</button>
+          <button class="qn-chip" data-t="asst-chip-2">How can I contact you?</button>
+          <button class="qn-chip" data-t="asst-chip-3">Tell me about your WHO role</button>
+          <button class="qn-chip" data-t="asst-chip-4">Research interests?</button>
+          <button class="qn-chip" data-t="asst-chip-5">Citations & Impact</button>
         </div>
       </div>
       <div class="chat-footer">
-        <input type="text" id="chat-input" placeholder="Ask me about my PhD, research..." autocomplete="off">
+        <input type="text" id="chat-input" placeholder="Ask me about my PhD, research..."
+          data-t-placeholder="asst-placeholder" autocomplete="off">
         <button id="send-chat">
           <ion-icon name="send-outline"></ion-icon>
         </button>
@@ -2137,6 +2111,7 @@
     </button>
   </div>
 
+  <script src="./assets/js/translations.js"></script>
   <script src="./assets/js/assistant-data.js"></script>
   <script src="./assets/js/script.js"></script>
 
