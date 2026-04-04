@@ -1753,3 +1753,54 @@ body {
   color: white;
   transform: translateY(-2px);
 }
+
+/*-----------------------------------*\
+  #MOBILE RESPONSIVENESS FIXES
+\*-----------------------------------*/
+
+@media (max-width: 768px) {
+  .hero-profile-wrapper {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .hero-text-responsive, .hero-btn-responsive {
+    margin-inline: auto !important;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: min(var(--fs-3), 10vw) !important;
+  }
+  .h1, .h2 {
+    font-size: min(var(--fs-3), 8vw) !important;
+  }
+  .deco-title {
+    display: none !important;
+  }
+  .cta .section-title {
+    font-size: 7vw !important;
+  }
+  .timeline-container {
+    padding-inline-start: 20px !important;
+  }
+  .timeline-container::before {
+    left: 8px !important;
+  }
+  .timeline-dot {
+    left: -19px !important;
+    width: 15px !important;
+    height: 15px !important;
+  }
+  .collab-card {
+    padding: 20px !important;
+  }
+  .assistant-widget {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+  .assistant-chat {
+    width: 300px !important;
+    height: 400px !important;
+    bottom: 75px !important;
+  }
+}
